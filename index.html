@@ -3,37 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eBanque Mulhouse - Vérification de Solde</title>
+    <title>eBanque Mulhouse - Portail sécurisé</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body><header>
-    <img src="Logo.png" alt="eBanque Mulhouse" class="logo">
+<body>
+
+<header>
+    <img src="Logo.png" alt="Logo eBanque Mulhouse" class="logo">
+    <h1>eBanque Mulhouse</h1>
+    <p class="subtitle">Portail officiel de vérification des comptes</p>
 </header>
 
-    <header>
-        <img src="logo.png" alt="Logo eBanque Mulhouse" class="logo">
-        <h1>eBanque Mulhouse</h1>
-        <p class="slogan">Service de vérification sécurisée</p>
-    </header>
+<main>
+    <section class="card">
+        <h2>Vérification de solde</h2>
 
-    <section class="box">
-        <h2>Vérifier votre solde</h2>
-
-        <form id="verif-form">
+        <form id="verifForm">
             <label>Numéro de compte :</label>
-            <input type="text" id="account" placeholder="Entrez votre numéro de compte" required>
+            <input id="compte" type="text" placeholder="EX :  FR76 1020 7000 1234" required>
 
-            <button type="submit">Vérifier</button>
+            <label>Code client :</label>
+            <input id="code" type="password" placeholder="Votre code d'accès" required>
+
+            <button type="submit">Vérifier le solde</button>
         </form>
 
-        <div id="result"></div>
+        <div id="resultat" class="hidden">
+            <h3>Résultat</h3>
+            <p id="solde"></p>
+        </div>
     </section>
+</main>
 
-    <footer>
-        © 2025 eBanque Mulhouse — Service sécurisé
-    </footer>
+<footer>
+    © 2025 eBanque Mulhouse – Tous droits réservés
+</footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
