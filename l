@@ -1,82 +1,83 @@
-body {
+/* Réinitialisation basique */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f7fb;
-    color: #003b7a;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    text-align: center;
+/* Style général de la page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Conteneur principal pour éviter les miniatures */
+.container {
+    width: 100%;
+    max-width: 1100px;
+    background: #ffffff;
     padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
 }
 
-.logo {
-    width: 180px;
+/* Logo ou image principale */
+.header img {
+    display: block;
+    width: 100%;
+    max-width: 300px; /* change selon ta préférence */
+    margin: 0 auto;
+}
+
+/* Titre principal */
+h1 {
+    text-align: center;
+    font-size: 32px;
     margin-bottom: 10px;
 }
 
-h1 {
-    margin: 0;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.slogan {
-    margin-top: 5px;
-    font-size: 14px;
-    opacity: 0.7;
-}
-
-.box {
-    width: 90%;
-    max-width: 420px;
-    background: white;
-    margin: 40px auto;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.08);
-}
-
-.box h2 {
-    margin-top: 0;
+/* Sous-titre */
+h2 {
     text-align: center;
+    font-size: 22px;
+    color: #666;
+    margin-bottom: 20px;
 }
 
-input {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #c8d6e5;
-    border-radius: 6px;
-}
-
-button {
-    width: 100%;
-    padding: 12px;
-    background: #003b7a;
-    color: white;
-    border: none;
-    border-radius: 6px;
+/* Paragraphe propre */
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
     font-size: 16px;
 }
 
-button:hover {
-    opacity: 0.9;
+/* Boutons propres */
+button, .btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #0077ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
 }
 
-#result {
-    margin-top: 20px;
-    font-weight: bold;
-    text-align: center;
+button:hover, .btn:hover {
+    background: #0059c8;
 }
-footer {
-    text-align: center;
-    padding: 20px 0;
-    opacity: 0.7;
-    font-size: 13px;
-}
-.logo {
-    width: 220px;
-    margin: 20px auto;
+
+/* Images internes */
+img {
+    max-width: 100%;
+    height: auto; /* empêche les miniatures déformées */
     display: block;
+    margin: 20px auto;
 }
