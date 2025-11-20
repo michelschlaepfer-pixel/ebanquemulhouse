@@ -75,3 +75,8 @@ footer {
     opacity: 0.7;
     font-size: 13px;
 }
+.logo {
+    width: 220px;
+    margin: 20px auto;
+    display: block;
+}
