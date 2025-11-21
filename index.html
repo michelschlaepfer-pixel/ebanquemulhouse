@@ -2,45 +2,40 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eBanque Mulhouse - Portail sécurisé</title>
+    <title>eBanque de Mulhouse - Accueil</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-    <img src="Logo.png" alt="Logo eBanque Mulhouse" class="logo">
-    <h1>eBanque Mulhouse</h1>
-    <p class="subtitle">Portail officiel de vérification des comptes</p>
+    <img src="images/logo.png" class="logo">
+    <div>
+        <h1>eBanque de Mulhouse</h1>
+        <h3>Banque de rachat de crédit & d’or</h3>
+    </div>
 </header>
 
-<main>
-    <section class="card">
-        <h2>Vérification de solde</h2>
+<section class="hero">
+    <h2>Votre finance, entre sécurité et performance</h2>
+    <p>La référence à Mulhouse pour le rachat de crédit, la consolidation, et l’investissement dans l’or.</p>
+    <a class="btn" href="login.html">Accéder à mon Espace Client</a>
+</section>
 
-        <form id="verifForm">
-            <label>Numéro de compte :</label>
-            <input id="compte" type="text" placeholder="EX :  FR76 1020 7000 1234" required>
+<section class="services">
+    <a href="rachat-credit.html" class="service-box">
+        <h3>Rachat de crédit</h3>
+        <p>Réduisez vos mensualités et reprenez le contrôle.</p>
+    </a>
 
-            <label>Code client :</label>
-            <input id="code" type="password" placeholder="Votre code d'accès" required>
-
-            <button type="submit">Vérifier le solde</button>
-        </form>
-
-        <div id="resultat" class="hidden">
-            <h3>Résultat</h3>
-            <p id="solde"></p>
-        </div>
-    </section>
-</main>
+    <a href="or.html" class="service-box">
+        <h3>Achat & Vente d’or</h3>
+        <p>Investissez ou vendez votre or en toute sécurité.</p>
+    </a>
+</section>
 
 <footer>
-    © 2025 eBanque Mulhouse – Tous droits réservés
+    © 2025 • eBanque de Mulhouse • Sécurité • Confiance • Expertise
 </footer>
-
-<script src="script.js"></script>
 
 </body>
 </html>
